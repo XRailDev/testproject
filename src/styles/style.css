@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+}
+table {
+    width: 96%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    border-top: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+.persons__table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table__headers {
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+.button__button {
+    padding: 8px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.modal__box{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.create__person {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    border: 1px outset gray;
+    margin-top: 20px;
+    position: relative;
+}
+.modal__title {
+    background-color: gray;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.button_type_modal {
+    float: right;
+    margin: unset;
+}
+.modal__container {
+    width: 50%;
+}
+.form__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+    height: 38px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 10px;
+}
+.input::placeholder {
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.link__back {
+    margin-top: 0;
+    color: dodgerblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.wrapper {
+    width: 85%;
+    margin-bottom: 15px;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+.button__delete {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid gray;
+    background-color: #ffc2b3;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    cursor: pointer;
+}
+.button__delete i {
+    color: gray;
+    font-size: 26px;
+}
+.button__update {
+    width: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffffcc;
+}
+.button__update i {
+    color: gray;
+    font-size: 18px;
+}
+.img__person {
+    width: 2vw;
+    margin-right: 5px;
+}
+@media screen and (max-width: 600px) {
+    .img__person {
+        display: none;
+    }
+    .modal__container {
+        width: 60%;
+    }
+    .modal__title {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .modal__container {
+        width: 80%;
+    }
+    .modal__title {
+        font-size: 21px;
+    }
+}
